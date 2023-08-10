@@ -6,13 +6,6 @@ import { useSpring, animated, config, easings } from '@react-spring/web';
 import useForm from './useForm';
 import validade from './validateForm';
 
-//assets
-import logo from '../assets/m3d.svg';
-import insta from '../assets/instagram.svg';
-import face from '../assets/facebook.svg';
-import linked from '../assets/linkedin.svg';
-
-
 export default function Home() {
   const year = new Date().getFullYear()
 
@@ -67,8 +60,9 @@ export default function Home() {
         }}
       >
         <Image
-          src={logo}
-          height={100}
+          src="/m3d.svg"
+          height={200}
+          width={500}
         />
       </animated.div>
 
@@ -151,48 +145,6 @@ export default function Home() {
           }}
         >
           © M3D {`${year}`} - All Rights Reserved.
-        </div>
-
-        {/* Social */}
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            marginLeft: 'auto',
-          }}
-        >
-          <a
-            href='https://www.instagram.com'
-            target='_blank'
-            style={{
-              width: '35px',
-              height: '35px',
-              marginLeft: '10px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-            <Image
-              src={insta}
-              height={18}
-            />
-          </a>
-          <a
-            href='https://www.linkedin.com'
-            target='_blank'
-            style={{
-              width: '35px',
-              height: '35px',
-              marginLeft: '10px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
-            }}>
-            <Image
-              src={linked}
-              height={18}
-            />
-          </a>
         </div>
       </animated.div>
     </div>
