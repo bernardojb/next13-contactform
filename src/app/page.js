@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useSpring, animated, config, easings } from '@react-spring/web';
-import useForm from './useForm';
+import useForm from './contact/useForm';
 import validade from './validateForm';
 
 export default function Home() {
