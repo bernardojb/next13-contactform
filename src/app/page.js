@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useSpring, animated, config, easings } from '@react-spring/web';
 import useForm from './contact/useForm';
-import validade from './validateForm';
+import validade from './contact/validateForm';
 
 export default function Home() {
   const year = new Date().getFullYear()
